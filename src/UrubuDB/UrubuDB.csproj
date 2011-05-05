@@ -5,7 +5,7 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>9.0.21022</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>{0956774C-F661-4F42-870E-AD12D7AE6F0A}</ProjectGuid>
+    <ProjectGuid>{C3408820-8D99-4260-B893-28BAE7A1009B}</ProjectGuid>
     <ProjectTypeGuids>{E613F3A2-FE9C-494F-B74E-F63BCB86FEA6};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <OutputType>Library</OutputType>
     <RootNamespace>UrubuDB</RootNamespace>
@@ -44,24 +44,18 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
+    <Reference Include="System.Core" />
     <Reference Include="monotouch" />
-    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Applications\MonoDevelop 2.6.app\Contents\MacOS\lib\monodevelop\AddIns\NUnit\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="Newtonsoft.Json.Net35, Version=4.0.2.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed">
       <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\libs\Json40r2\Bin\Net35\Newtonsoft.Json.Net35.dll</HintPath>
-    </Reference>
-    <Reference Include="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\System.Core.dll</HintPath>
+      <HintPath>..\..\libs\Json40r2\Bin\Net35\Newtonsoft.Json.Net35.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <Compile Include="UrubuDBFixture.cs" />
     <Compile Include="DocumentStore.cs" />
     <Compile Include="SQLite.cs" />
+    <Compile Include="Document.cs" />
+    <Compile Include="DocumentCollection.cs" />
   </ItemGroup>
 </Project>

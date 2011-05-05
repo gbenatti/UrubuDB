@@ -1,2 +1,4 @@
 test-results/
+tests/*/bin/
+src/*/bin/
 *.pidb

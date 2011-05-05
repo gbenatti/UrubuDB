@@ -1,7 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 10.00
 # Visual Studio 2008
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrubuDB", "UrubuDB\UrubuDB.csproj", "{0956774C-F661-4F42-870E-AD12D7AE6F0A}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrubuDB.Tests", "tests\UrubuDB.Tests\UrubuDB.Tests.csproj", "{1CF944A0-7EEA-4221-9C39-94CDF80A2FBE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UrubuDB", "src\UrubuDB\UrubuDB.csproj", "{C3408820-8D99-4260-B893-28BAE7A1009B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -9,12 +11,16 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{0956774C-F661-4F42-870E-AD12D7AE6F0A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0956774C-F661-4F42-870E-AD12D7AE6F0A}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0956774C-F661-4F42-870E-AD12D7AE6F0A}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0956774C-F661-4F42-870E-AD12D7AE6F0A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1CF944A0-7EEA-4221-9C39-94CDF80A2FBE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1CF944A0-7EEA-4221-9C39-94CDF80A2FBE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1CF944A0-7EEA-4221-9C39-94CDF80A2FBE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1CF944A0-7EEA-4221-9C39-94CDF80A2FBE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C3408820-8D99-4260-B893-28BAE7A1009B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C3408820-8D99-4260-B893-28BAE7A1009B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C3408820-8D99-4260-B893-28BAE7A1009B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C3408820-8D99-4260-B893-28BAE7A1009B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = UrubuDB\UrubuDB.csproj
+		StartupItem = tests\UrubuDB.Tests\UrubuDB.Tests.csproj
 	EndGlobalSection
 EndGlobal

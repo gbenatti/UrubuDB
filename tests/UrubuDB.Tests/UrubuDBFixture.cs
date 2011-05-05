@@ -3,7 +3,7 @@ using System;
 using System.IO;
 using System.Linq;
 
-namespace UrubuDB
+namespace UrubuDB.Tests
 {
 	class Person
 	{
