@@ -1,27 +1,37 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="UrubuDB/UrubuDBFixture.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="tests/UrubuDB.Tests/DocumentStoreFixture.cs">
     <Files>
-      <File FileName="UrubuDB/UrubuDBFixture.cs" Line="64" Column="38" />
-      <File FileName="UrubuDB/DocumentStore.cs" Line="88" Column="1" />
+      <File FileName="../../spikes/UrubuDB/UrubuDB/UrubuDBFixture.cs" Line="11" Column="9" />
+      <File FileName="../../spikes/UrubuDB/UrubuDB/DocumentStore.cs" Line="88" Column="1" />
+      <File FileName="../../spikes/UrubuDB/libs/sqlite-net-71/SQLite.cs" Line="1" Column="1" />
+      <File FileName="../../spikes/UrubuDB/UrubuDB/SQLite.cs" Line="1502" Column="1" />
       <File FileName="libs/sqlite-net-71/SQLite.cs" Line="1" Column="1" />
-      <File FileName="UrubuDB/SQLite.cs" Line="1502" Column="1" />
+      <File FileName="tests/UrubuDB.Tests/DocumentStoreFixture.cs" Line="53" Column="8" />
+      <File FileName="src/UrubuDB/DocumentStore.cs" Line="14" Column="38" />
+      <File FileName="src/UrubuDB/Document.cs" Line="1" Column="1" />
+      <File FileName="src/UrubuDB/DocumentCollection.cs" Line="30" Column="27" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
-        <State expanded="True" selected="True" />
+        <State expanded="True">
+          <Node name="UrubuDB" expanded="True" />
+          <Node name="UrubuDB.Tests" expanded="True">
+            <Node name="DocumentStoreFixture.cs" selected="True" />
+          </Node>
+        </State>
       </Pad>
       <Pad Id="ClassPad">
-        <State expanded="True" selected="True" />
+        <State selected="True" />
       </Pad>
       <Pad Id="MonoDevelop.Debugger.WatchPad">
         <State />
       </Pad>
       <Pad Id="MonoDevelop.NUnit.TestPad">
         <State expanded="True" selected="True">
-          <Node name="UrubuDB" expanded="True">
+          <Node name="UrubuDB.Tests" expanded="True">
             <Node name="UrubuDB" expanded="True">
-              <Node name="UrubuDBFixture" expanded="True" />
+              <Node name="Tests" expanded="True" />
             </Node>
           </Node>
         </State>

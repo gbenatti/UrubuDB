@@ -12,7 +12,7 @@ namespace UrubuDB.Tests
 	}
 	
 	[TestFixture]
-	public class UrubuDBFixture
+	public class DocumentStoreFixture
 	{
 		string storePath;
 		
@@ -35,7 +35,7 @@ namespace UrubuDB.Tests
 		}
 		
 		[Test]
-		public void ShouldSaveObject()
+		public void ShouldSupportInsert()
 		{
 			var store = new DocumentStore(storePath);
 
@@ -50,6 +50,26 @@ namespace UrubuDB.Tests
 			store.Close();
 		}
 	
+		[Test]
+		public void ShouldSupportUpdate()
+		{
+		}
+		
+		[Test]
+		public void ShouldSupportDelete()
+		{
+		}
+
+		[Test]
+		public void ShouldSupportFindByGuid()
+		{
+		}
+
+		[Test]
+		public void ShouldPersistDataBetweenSessions()
+		{
+		}
+		
 		[Test]
 		public void ShouldSupportLinq()
 		{
