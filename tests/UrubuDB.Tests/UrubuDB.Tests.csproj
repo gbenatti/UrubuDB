@@ -45,18 +45,19 @@
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="monotouch" />
-    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\..\..\..\..\..\Applications\MonoDevelop 2.6.app\Contents\MacOS\lib\monodevelop\AddIns\NUnit\nunit.framework.dll</HintPath>
-    </Reference>
     <Reference Include="System.Core, Version=2.0.5.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e">
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\..\..\..\..\..\..\Developer\MonoTouch\usr\lib\mono\2.1\System.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="nunit.framework, Version=2.4.8.0, Culture=neutral, PublicKeyToken=96d09a1eb7f44a77">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\libs\NUnit\nunit.framework.dll</HintPath>
     </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Compile Include="DocumentStoreFixture.cs" />
+    <Compile Include="DocumentStoreAdvancedOperationsFixture.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\UrubuDB\UrubuDB.csproj">
