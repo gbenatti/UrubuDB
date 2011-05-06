@@ -8,10 +8,12 @@ namespace UrubuDB
 	public class DocumentCollection<T> : IEnumerable<T>
 	{
 		SQLiteConnection _conn;
+		Dictionary<object, int> _mapping;
 		
-		public DocumentCollection (SQLiteConnection conn)
+		public DocumentCollection (SQLiteConnection conn, Dictionary<object, int> mapping)
 		{
 			_conn = conn;
+			_mapping = mapping;
 		}
 		
 		#region IEnumerable[T] implementation
@@ -21,7 +23,10 @@ namespace UrubuDB
 	
 			foreach(Document doc in _conn.Table<Document>().Where(doc => doc.DocumentType == documentType))
 			{
-				yield return JsonConvert.DeserializeObject<T>(doc.Json);
+				var data = JsonConvert.DeserializeObject<T>(doc.Json);
+				_mapping[data] = doc.Id;
+				
+				yield return data;
 			}
 		}
 		#endregion
